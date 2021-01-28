@@ -15,4 +15,3 @@ if (acceptorno==="y") {
 }
 document.write(status)
 document.getElementById("statusof").innerText= age;
-
