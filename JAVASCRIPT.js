@@ -1,13 +1,18 @@
 var acceptorno = prompt("are you interested in a FULL Software Development scholarship? y or n");
 var status;
-var a=42
-var b='42'
-if (a==b) {
-    var c= prompt('ok')
+if (acceptorno==="y") {
+    var age= prompt('What is your age?')
+    if (age >=18 && age<=35 ) {
+        status = "** CONGRATS; You are eligable to the scholarship **"
+        confirm("Are you happy with this javascript");
+        alert("THANK YOU");
+    } else {
+        status= "!! Sorry, you are NOT applicable to this scholarship !!"
+    }  
 } else {
-    c=prompt('no')
+    var age= prompt('What is your age?')
+    status="You are not interested in Software Development scholarship program"
 }
-document.write(c)
 document.write(status)
-document.getElementById("statusof").innerText= age; 
+document.getElementById("statusof").innerText= age;
 
