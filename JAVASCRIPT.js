@@ -1,7 +1,11 @@
 var acceptorno = prompt("are you interested in a FULL Software Development scholarship? y or n");
 var status;
-if (acceptorno==="y") {
+while ( acceptorno !=='y' && acceptorno !== 'n'){
+    acceptorno = prompt("are you interested in a FULL Software Development scholarship? y or n");
+}
+if (acceptorno==="y"){
     var age= prompt('What is your age?')
+    var times = prompt('how many scholarship you want to attend?')
     if (age >=18 && age<=35 ) {
         status = "** CONGRATS; You are eligable to the scholarship **"
         confirm("Are you happy with this javascript");
@@ -13,5 +17,20 @@ if (acceptorno==="y") {
     var age= prompt('What is your age?')
     status="You are not interested in Software Development scholarship program"
 }
+
+var statusimage
+
+if (status === "** CONGRATS; You are eligable to the scholarship **") {
+    statusimage = "<img src='Scholarship.jpg'/>"
+} else {
+    statusimage=""
+}
+
+var result =''
+
+for (var i = 0; i < times ; i++) {
+    result = result + statusimage;
+  }
 document.write(status)
+document.write(result)
 document.getElementById("statusof").innerText= age;
