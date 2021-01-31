@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+  }
+  header h2 nav ul {
+    list-style: none;
+  }
+  header h2 nav ul li {
+    display: inline-block;
+    padding: 30px;
+    background-color:rgb(177, 159, 184);color:rgb(56, 54, 223);
+    text-align:center";
+  }
+
+  
